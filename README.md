@@ -1,4 +1,4 @@
-# aoty_helper
+# Album of the Year helper tool (AOTY HELPER)
 This is a command-line tool I created to help me organize my album of the year list. It came together a little too late to be useful for 2020, but I am going to use it for 2021 to keep track of everything that I listen to. 
 
 There are two files initially, an entry tool and a reader. The entry tool outputs to a .csv that the reader then uses pandas to read. I am still working on adding functionality to the reader, i.e. allowing the user to choose what information the program prints out.
