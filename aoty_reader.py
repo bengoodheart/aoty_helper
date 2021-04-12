@@ -9,6 +9,10 @@ Created on Fri Dec 18 10:52:28 2020
 import numpy as np
 import pandas as pd
 
+#TODO:  IMPLEMENT AN INTERFACE 
+#       ADD FUNCTIONALITY
+#       GRAPH GENERATION
+
 df = pd.read_csv('aoty.csv')
 d1 = df["Rating"]
 s = pd.Series(['aoty.csv'])
@@ -32,7 +36,7 @@ if readmode.lower() == "--help":
 #sort by rating
 print(df.sort_values(by="Rating", ascending=False))
 
-#sory by year
+#sort by year
 print("Now sorting by year")
 print(df.sort_values(by="Year", ascending=False))
 
