@@ -9,6 +9,9 @@ Created on Tue Dec  8 20:32:14 2020
 import csv
 from os import path
 
+#TODO:  ADD EDIT CAPABILITY 
+#       REVISIT IMPLEMENTATION IE SHOULD I MAKE CLASSES?
+
 def fileExists(file_name):
     return path.exists(file_name)
 
