@@ -16,7 +16,7 @@ import pandas as pd
 def fileExists(file_name):
     return path.exists(file_name)
 
-def editor(file_name):
+#def editor(file_name):
     #query = input("Put the artist or part of the release name you would like to edit")
     #with open(file_name, 'a') as csv_file:
     #TODO: IMPLEMENT THIS
