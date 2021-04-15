@@ -8,6 +8,7 @@ Created on Tue Dec  8 20:32:14 2020
 """
 import csv
 from os import path
+import pandas as pd
 
 #TODO:  ADD EDIT CAPABILITY 
 #       REVISIT IMPLEMENTATION IE SHOULD I MAKE CLASSES?
@@ -15,15 +16,35 @@ from os import path
 def fileExists(file_name):
     return path.exists(file_name)
 
+def editor(file_name):
+    #query = input("Put the artist or part of the release name you would like to edit")
+    #with open(file_name, 'a') as csv_file:
+    #TODO: IMPLEMENT THIS
+
+
+def quit_check(input_text):
+        if (input_text.lower() == "quit"):
+                print("The session has concluded....Goodbye")
+                quit()
+    #think about how to optimize this
+
 def inputter():
     q = False
     while(q == False):
             artist = input("Please input the artist name: ")
+            quit_check(artist)
             album = input("Please input the album name: ")
+            quit_check(album)
             genre = input("Please input the genre: ")  
+            quit_check(genre)
             label = input("Please input the label: ")
+            quit_check(label)
             year = input("Please input the year: ")
+            quit_check(year)
             rating = input("Please rate from 1 to 10: ")
+            quit_check(rating)
+
+
             
             ##makes sure the rating int is valid
             try:
@@ -40,6 +61,7 @@ def inputter():
             
             
             comments = input("Please input any comments you may have: ")
+            quit_check(comments)
             
             #Pre-write summary
             print("Entry recorded:", album, "by", artist,"| Genre:", genre,"| Label:", label, "| Released:", year, "| You rated it a ",rating,"/10")
